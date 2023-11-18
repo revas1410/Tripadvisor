@@ -1,0 +1,435 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 20%;
+    vertical-align: middle;
+    position: sticky;
+    top: 0;
+    margin-top: 20px;
+    background-color: white;
+    z-index: 5;
+    width: auto;
+    border-bottom: solid grey 1px;
+    height: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-s1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-s1__menu {
+  
+    margin-right: 30px;
+    font-size: 24px;
+    display: none;
+}
+
+.navbar-s1 img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-s1__head {
+    display: flex;
+    vertical-align: middle;
+    width: 100%;
+    height:50%
+}
+
+.navbar-s2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-s2__search {
+    border-radius: 20px;
+    border: solid black 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    display: none;
+}
+
+.navbar-s2__search input {
+    border: none;
+    width: 80%;
+    margin: 10px;
+}
+
+.navbar-s2 p {
+    font-size: 20px;
+}
+
+.navbar-s2__search input:focus {
+    outline: 0px;
+    color: black;
+}
+
+.navbar-s3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-s3__button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: white;
+    border: solid black 1px;
+    border-radius: 20px;
+    font-size: 20px;
+    flex-wrap: nowrap;
+}
+
+.navbar-s3__button:hover {
+    background-color: palevioletred;
+    border: none;
+}
+
+
+
+.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+.trip-search {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.trip-search {
+    font-size: 30px;
+}
+
+.trip-options {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 5px;
+    gap: 15px;
+}
+
+.trip-options_h1 {
+    border-bottom: solid black 2px;
+   
+}
+
+.trip-options h2:hover {
+    border-bottom: solid black 2px;
+}
+
+/* search-box */
+
+.search-bar {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar__s1 {
+    display: flex;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-bar__s1 input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    font-size: 25px;
+    border-radius: 40px;
+}
+
+.search-bar__s1 button {
+    height: 80%;
+    background-color: #84E9BD;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    border: none;
+}
+
+.image-guide {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 30px;
+    position: relative;
+}
+
+.image-guide__trip {
+    width: 100%;
+}
+
+.image-guide__trip img {
+    border-radius: 30px;
+    /* height: 600px; */
+    width: 100%;
+}
+
+.image-guide__trip1 {
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    color: white;
+    padding: 2%;
+    width: 35%;
+}
+
+.image-guide__trip1 button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+}
+
+.trip-place {
+    margin-left: 20px;
+}
+
+.trip-place__head p {
+    color: grey;
+    font-size: medium;
+}
+
+.trip-place1__img {
+    height: 100%;
+    flex-grow: 1;
+    flex-basis: 20%;
+    padding: 20px;
+}
+
+.trip-place1__img img {
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.trip-place1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.trip-place1__card {
+    position: relative;
+    display: flex;
+}
+
+.trip-place1__name {
+    position: absolute;
+    bottom: 10%;
+    padding: 3%;
+    color: white;
+}
+
+.trip-place1__name h3 {
+    width: 100%;
+}
+
+/* Coimbatore trip */
+
+.cbe-card {
+    margin-top: 50px;
+}
+
+.cbe-card__desc {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    /* flex-grow: 1;
+    flex-basis: 30%; */
+    justify-content: space-between;
+}
+
+.trip-card {
+    flex-grow: 1;
+    flex-basis: 20%;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.trip-card img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.trip-advisor {
+    margin-top: 100px;
+    position: relative;
+}
+
+.trip-advisor__img {
+    width: 100%;
+}
+
+.trip-advisor__img img {
+    width: 100%;
+}
+
+.trip-advisor__choice {
+    border: solid black 2px;
+    width: 30%;
+    padding: 1%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: white;
+}
+
+.trip-advisor__choice button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+.footer {
+    background-color: #FAF1ED;
+    color: grey;
+}
+
+.footer1 {
+    margin-top: 150px;
+    display: flex;
+    padding: 30px;
+}
+
+.footer1-s1 {
+    padding: 20px;
+}
+
+.footer1-s1 p {
+    padding-top: 5px;
+}
+
+.footer2 {
+    margin-left: 50px;
+    padding-bottom: 100px;
+
+}
+
+.footer2 h5 {
+    white-space: nowrap;
+}
+
+.footer2-img {
+    display: flex;
+    align-items: center;
+}
+
+.footer2-img img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer2-s1 {
+    display: flex;
+    margin-left: 50px;
+    
+    
+}
+
+  
+  .footer2-s1 p {
+    padding: 10px;
+}
+
+/* Media queries */
+
+@media screen and (max-width:1200px) {
+    .search-bar__s1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navbar-s3 p {
+        display: none;
+    }
+    
+    .trip-card {
+        flex-basis: 40%;
+    }
+    .navbar {
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .navbar-s1__menu {
+        display: block;
+    }
+    .navbar-s2__search {
+        display: block;
+    }
+    .navbar-s2 p {
+        display: none;
+    }
+    .trip-options {
+        font-size: 12px;
+    }
+    .trip-place1__name h3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+    .navbar-s2__search {
+        display: none;
+    }
+    .navbar-s3__button {
+        display: none;
+    }
+    .navbar-s1__head {
+        margin-left: 100px;
+    }
+    .trip-place1__name h3 {
+        display: none;
+    }
+    .trip-card {
+        flex-basis: 40%;
+    }
+}
